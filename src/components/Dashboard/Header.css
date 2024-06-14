@@ -1,0 +1,85 @@
+/* Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 5px 20px; 
+  color: black;
+  box-shadow: 0 4px 2px -2px gray; 
+  height: 60px;
+  width: 100vw; /* Ensure the header spans the full viewport width */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  position: relative; /* Ensure the header's box-shadow spans the full width */
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.company-logo {
+  width: 70px; 
+  height: 50px; 
+  margin-right: 10px;
+}
+
+.dashboard-name {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+  }
+
+  .left-section {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .dashboard-name {
+    font-size: 1.2rem;
+  }
+
+  .search-bar input[type="text"] {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+  }
+
+  .left-section {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .dashboard-name {
+    font-size: 1.2rem;
+  }
+
+  .search-bar input[type="text"] {
+    width: 100%;
+  }
+}
